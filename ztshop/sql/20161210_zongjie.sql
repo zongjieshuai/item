@@ -1,0 +1,1 @@
+ ALTER TABLE `ztshop`.`zt_floor` ADD COLUMN `desc` VARCHAR(100) DEFAULT '' NOT NULL AFTER `category_id`; 

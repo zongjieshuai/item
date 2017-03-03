@@ -1,0 +1,255 @@
+html,body{
+	margin:0;
+	padding: 0;
+	font-size: 62.5%;
+	line-height: 1;
+	font-family: 微软雅黑;
+}
+ul,li,p{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:#f8f8fe;
+}
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+ }
+ a{
+ 	text-decoration: none;
+ }
+ ul,li{
+ 	list-style: none;
+ }
+ .head_top{
+ 	padding:0 14px;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	background-color: #68cb78;
+}
+.head_top a{
+	font-size: 25px;
+	/*font-weight: 600;*/
+	color: #fff;
+}
+.ht_r{
+	float: right;
+}
+.head_nav{
+	background: #fff;
+	border-bottom: 2px solid #3ba94d;
+}
+.head_nav li{
+	float: left;
+	width: 25%;
+	height: 42.5px;
+}
+.head_nav li a{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	line-height: 42.5px;
+	text-align: center;
+}
+.head_nav li>a>span{
+	font-size: 14px;
+	color: #4a4a4a;
+}
+.head_nav>ul>li:nth-of-type(1) span{
+    color: #3ba94d;
+}
+.fs_lb{
+	width: 100%;
+	height: 112.5px;
+	overflow: hidden;
+	background: red;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-wrapper img{
+	width: 100%;
+	height:100%;
+}
+.goods_nav{
+	margin: 5px 0;
+	padding: 0 5px;
+}
+.goods_boxs{
+	float: left;
+	padding: 0 1%;
+	width: 48%;
+}
+.goods_box{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	background: #fff;
+}
+.box_pic>a>div{
+	background-size: 100% 100%;
+	width:100%;
+	height: 172.5px;
+	background-repeat: no-repeat;
+}
+.p556654{
+	background: url(../images/1.jpg);	
+}
+.p556174{
+	background: url(../images/p556174.jpg);
+}
+.p510080{
+	background: url(../images/p510080.jpg);	
+}
+.p556277{
+	background: url(../images/p556277.jpg);	
+}
+.p558909{
+	background: url(../images/p558909.jpg);	
+}
+.p558711{
+	background: url(../images/p558711.jpg);	
+}
+.box_word{
+	border: 1px solid #ccc;
+	width: 97%;
+	padding: 0 1%;
+}
+.box_word p:nth-of-type(1){
+	margin-top: 5px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.box_word p:nth-of-type(1) a{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+    color: #ccc;
+}
+.box_word p:nth-of-type(2){
+	margin: 5px 0 10px 0;
+}
+.good_price{
+    color: #e17c72;
+    font-weight: 700;
+    font-size: 16.5px;
+}
+.good_oprice{
+    margin-left: 10px;
+	text-decoration: line-through;
+	font-size: 14px;
+    color: #ccc;
+}
+.quality{
+	background: #fff;
+}
+.quality_box{
+	margin-bottom: 30px;
+}
+.qb_name{
+	margin: 0 10px 30px;
+	padding-top: 25px;
+}
+.qb_name a:nth-of-type(1){
+	display: inline-block;
+	margin: 0 5px 0 3px;
+	width: 25px;
+	height: 30px;
+    vertical-align: middle;
+
+}
+.qb_name>a>img{
+	width: 25px;
+	height: 25px;
+}
+.qb_name a:nth-of-type(2){
+	margin-right: 9px;
+    color: #4a4a4a;
+    display: inline-block;
+    height: 25px;
+    font-size: 15px;
+}
+.qb_name span{
+	display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #9b9b9b;
+}
+.quality_lb{
+	
+	padding: 0 10px;
+	height: 214px;
+}
+.quality_lb ul{
+	white-space:nowrap;
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+}
+.quality_lb li{
+	float: left;
+	width: 100px;
+	height: 214px;
+
+}
+.quality_lb_more{
+	padding-bottom: 10px;
+	height: 31px;
+	line-height: 31px;
+}
+.quality_lb_more a{
+	margin-right: 10px;
+	float: right;
+    color: #4a4a4a;
+    font-weight: 500;
+    font-size: 14px;
+}
+.box {
+	padding: 0 15px;
+	/*height: 235px;*/
+    white-space: nowrap;
+    overflow: auto;
+    overflow-y:hidden;
+    /*background-color: red;*/
+}
+.box li {
+	margin-left: 15px;
+    display: inline-block;
+    height: 100%;
+    width: 150px;
+    text-align: center;
+}
+.box li:nth-of-type(1){
+	margin-left: 0;
+}
+.box img{
+	width: 150px;
+	height: 150px;
+}
+.quality_box_word{
+	/*border: 1px solid #ccc;*/
+	width: 98%;
+	padding: 0 1%;
+}
+.quality_box_word p:nth-of-type(1){
+	margin-top: 5px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.quality_box_word p:nth-of-type(1) a{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+    color: #ccc;
+}
+.quality_box_word p:nth-of-type(2){
+	float: left;
+	margin: 5px 0 10px 0;
+}

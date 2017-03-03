@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <!-- <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+    -->
+    <!-- <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    -->
+    <!-- <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    -->
+    <link rel="stylesheet" href="__PC__/css/normalize.css">
+    <link rel="stylesheet" href="__PC__/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__PC__/css/bootstrap.offcanvas.min.css">
+
+    <link rel="stylesheet" href="__PC__/css/font-awesome/font-awesome.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="__PC__/css/iframe.css">
+    <title>考试系统</title>
+</head>
+<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">您正在使用一个 <strong>老旧的</strong> 浏览器. 为了您能获取更好的互联网体验，请 <a href="http://browsehappy.com.cn/" target="_blank">升级</a> 您的浏览器.</p>
+            <![endif]-->
+
+    <!-- =========================================== mycode =====================================- -->
+
+    <div class="top">
+        <img src="img/logo.png" class="logo" alt="">
+        <h1>中国光大银行考试系统</h1>
+        <div class="test-info">
+            <div class="info">
+                <span class="name">开始时间</span>
+                00:00:00
+            </div>
+            <div class="info">
+                <span class="name">结束时间</span>
+                00:00:00
+            </div>
+            <div class="info">
+                <span class="name zt">状态</span>
+                未考
+            </div>
+            <div class="info">
+                <span class="name">创建人员</span>
+                XXX
+            </div>
+            <div class="time">
+                11:11:11
+            </div>
+        </div>
+        <div class="user">
+            <p>您好,XXX <span class="exit"><a href="">退出</a></span></p>
+        </div>
+    </div>
+    <div class="test">
+        <div class="question question-on clearfix">
+            <h3 class="question-title">1.下列那种标志是驾驶机动车上路行驶应当放置的标志?</h3>
+            <span class="question-tip ">
+                <span class="question-num">1</span>/
+                <span class="question-totalnum">30</span>
+                <span class="question-icon"><i class="fa fa-lg fa-map-marker"></i></span>
+            </span>
+            <ul class="list-unstyled options">
+            <li><input type="checkbox"><span class="question-order">A:</span>产品合格标志</li>
+                <li><input type="checkbox"><span class="question-order">B:</span>产品合格标志</li>
+                <li><input type="checkbox"><span class="question-order">C:</span>产品合格标志</li>
+                <li><input type="checkbox"><span class="question-order">D:</span>产品合格标志</li>
+            </ul>
+            <div class="question-btns">
+                <a href="" class="btn btn-prev">上一题</a>
+                <a href="" class="btn btn-next">下一题</a>
+                <a href="" class="btn btn-question-submit">提交</a>
+            </div>
+        </div>
+
+        <div class="question-answer">
+            <div class="question-tip-left">
+                <h3>分析</h3>
+            </div>
+            <p class="answer-result">回答正确!回答错误!正确答案是:D</p>
+            <div class="question-tip-left">
+                <h3>答案详解</h3>
+            </div>
+            <p class="answer-analysis">回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正>回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正确回答正>回答正确回答正确回答正确回答正确回</p>
+        </div>
+    </div>
+    <div class="right">
+        <ul class="timus list-unstyled">
+        <?php
+            var_dump($question);
+        ?>
+            <volist id="vo" name="question">
+            <a href="">
+                <li class="active" rel="{$vo.id}">{$key+1}</li>
+            </a>
+            </volist>
+        </ul>
+        <div class="right-menu">
+            <div class="show pull-left">
+                <span class="s1">1</span>
+                未答题
+            </div>
+            <div class="show pull-right">
+                <span class="s3">3</span>
+                已标记
+            </div>
+            <div class="show center-block">
+                <span class="s2">2</span>
+                已答题
+            </div>
+            <a href="" class="btn btn-submit">完成提交</a>
+        </div>
+    </div>
+
+
+
+    <!-- ============================================ end =======================================- -->
+
+
+
+<!--[if (gte IE 9)|!(IE)]>
+<!-->
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+    <script src="__PC__/js/jquery-1.9.1.min.js" ></script>
+    <script src="__PC__/js/bootstrap.min.js"></script>
+    <script src="__PC__/js/bootstrap.offcanvas.min.js"></script>
+    <script src="__PC__/js/jquery.cookie.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

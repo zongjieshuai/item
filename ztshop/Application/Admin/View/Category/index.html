@@ -1,0 +1,70 @@
+ <include file="Public/header" /> 
+  <div class="container-fluid"> 
+   <div class="row"> 
+    <include file="Public/menu" /> 
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     <h2 class="sub-header">分类管理</h2> 
+     <form action="" method='get'>
+      <div class="form-group">
+            <div class="row">
+                <div class="col-md-4 grid_box1">
+                    <label class="control-label" >分类：</label>
+                    <select class="form-control1" name="parent_id">
+                        <option value="0">顶级分类</option>
+                        <?php foreach($list as $r){ ?>
+                        <option value="{$r['id']}">{$r['name']}</option>
+                        <?php }?>
+                    </select>
+                </div>
+                <div class="col-md-4 grid_box1">
+                    <label class="control-label" >标题：</label>
+                    <input type="text" class="form-control1" name="title" value="{$_GET['title']}">
+                </div>
+                <div class="col-md-4 grid_box1">
+                    <input class="btn btn-success" type="submit" value="查询">
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+     </form>
+     <div class="mail-toolbar clearfix">
+         <a href="{:U('admin/category/add')}" class="btn btn-primary">新增</a>
+     </div>
+     <div class="table-responsive"> 
+      <table class="table table-striped"> 
+       <thead> 
+        <tr> 
+         <th>名称</th>  
+         <th>分类</th>
+         <th>操作</th> 
+        </tr> 
+       </thead> 
+       <tbody> 
+       <foreac name="list" item="v">
+       <?php foreach($list as $v){ ?>
+        <tr> 
+         <td>{$v['name']}</td> 
+         <td>{$v['parent_id']}</td> 
+         
+         <td>
+            <a href="{:U('admin/category/edit',array('id'=>$v['id']))}">编辑</a>
+            <a href="{:U('admin/category/delete',array('id'=>$v['id']))}">删除</a>
+         </td> 
+        </tr> 
+        <?php }?>
+        </foreac>
+       </tbody> 
+      </table> 
+     </div>
+     <style type="text/css">
+         .page {border-redius:4px;}
+         .page a {border:1px solid #ddd;padding:6px 12px;}
+         .page .current {display: inline-block;padding:6px 12px;background: #000;color:#fff;}
+     </style>
+     <div class="page">
+          {$page}
+     </div>
+    </div> 
+   </div> 
+  </div> 
+<include file="Public/footer" /> 

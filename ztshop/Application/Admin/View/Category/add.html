@@ -1,0 +1,36 @@
+ <include file="Public/header" /> 
+  <div class="container-fluid"> 
+   <div class="row"> 
+    <include file="Public/menu" /> 
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+     <h2 class="sub-header">新增</h2> 
+     
+        <form class="form-horizontal" action="{:U('admin/category/handleadd')}" method="post" >
+            <div class="form-group">
+                <label for="selector1" class="col-sm-2 control-label">分类</label>
+                <div class="col-sm-8"><select name="parent_id" id="selector1" class="form-control1">
+                    <option value="0">顶级分类</option>
+                    <?php foreach($list as $v) { ?>
+                    <option value="{$v['id']}">{$v['name']}</option>
+                    <?php } ?>
+                </select></div>
+            </div>
+            <div class="form-group">
+                <label for="focusedinput" class="col-sm-2 control-label">名称</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control1" name="name" id="focusedinput" placeholder="请输入分类名">
+                </div>                
+            </div>
+            <div class="form-group">
+                <label for="focusedinput" class="col-sm-2 control-label">名称</label>
+                <div class="col-sm-8">
+                    <input type="submit" class="form-control1"  >
+                </div>
+                
+            </div>
+        </form>
+
+    </div> 
+   </div> 
+  </div> 
+<include file="Public/footer" /> 

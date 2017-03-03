@@ -1,0 +1,316 @@
+html,body,div,ul,li,img,a,span,p{
+	margin:0;
+	padding:0;
+}
+html,body{
+	font-size: 62.5%;
+	line-height: 1;
+	/*font-family: "微软雅黑";*/
+}
+body{
+	background: #f8f8f8;
+}
+.clearfix::after{
+	display: block;
+	height:0;
+	content: "";
+	clear:both;
+}
+.hide{
+	display: none;
+}
+.classify>ul>li:nth-of-type(3) a{
+	color:#3ba94d !important;
+}
+.header{
+	height:5rem;
+	padding: 0 1.4rem;
+	background: #68cb78;
+	line-height: 5rem;
+}
+.header a{
+	text-decoration: none;
+	color:#fff;
+	font-size: 2.8rem;
+}
+.header i{
+	float: right;
+	line-height: 5rem;
+	color:#fff;
+	font-size: 2rem;
+}
+.classify{
+	height:4.25rem;
+	line-height: 4.25rem;
+	border-bottom:1px solid #3ba94d;
+	background: #fff;
+}
+.classify li{
+	list-style: none;
+	width:25%;
+	float: left;
+	text-align: center;
+}
+
+.classify li a{
+	text-decoration: none;
+	color:#4a4a4a;
+	font-size: 1.5rem;
+}
+.selected{
+	height:4rem;
+	line-height: 4rem;
+	padding-left:2rem;
+}
+.checkall_btn{
+	text-decoration: none;
+	color:#4a4a4a;
+	font-size: 1.5rem;
+	margin-right: 1rem;
+}
+.store{
+	color:#9b9b9b;
+	font-size: 1.5rem;
+}
+.store_name{
+	text-decoration: none;
+	color:#9b9b9b;
+	font-size: 1.5rem;
+}
+.item{
+	padding:0 0.75rem;
+	margin-bottom: 1rem;
+	position: relative;
+}
+.box{
+	position: absolute;
+	right:0.75rem;
+	top:0;
+	background: #f0f0f0;
+	color:#ccc;
+	width:3rem;
+	height:3rem;
+	text-align: center;
+	line-height: 3rem;
+	z-index: 100;
+	font-size: 2rem;
+}
+.detail{
+	padding:1.1rem;
+	background: #fff;
+	position: relative;
+	border:1px solid #f8f8f8;
+}
+.detail_img{
+	position: absolute;
+	top:1.1rem;
+	left: 1.1rem;
+}
+.detail_img img{
+	width:5rem;
+	height:5rem;
+}
+.detail_name{
+	margin-left: 6rem;
+	margin-right: 2rem;
+}
+.name{
+	line-height: 1.7rem;
+}
+.name a{
+	text-decoration: none;
+	font-size: 1.4rem;
+	color:#4a4a4a;
+}
+.delivery{
+	color:#e17c72;
+	line-height: 1.5rem;
+}
+.choose{
+	padding:1rem 0;
+	margin-top:3rem;
+}
+.choose li{
+	list-style: none;
+	float: left;
+	color: #9b9b9b;
+	font-size: 1.5rem;
+	margin-right: 0.5rem;
+}
+.price,.unit_price,.yuan{
+	color:#e17c72;
+	font-size: 1.5rem;
+	font-family: "微软雅黑";
+}
+.sum{
+	padding:1.5rem 0;
+	border-top:1px solid #f0f0f0;
+	border-bottom:1px solid #f0f0f0;
+}
+.minusLeft{
+	background-color: #ccc;
+	color:#ccc;
+	float: left;	
+	width:30px;
+	height:30px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 1rem;
+}
+.minusLeft a{
+	text-decoration: none;
+	color:#fff;
+}
+.minusRight{
+	background-color: #68cb78;
+	color:#ccc;
+	float: left;	
+	width:30px;
+	height:30px;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 1rem;
+}
+.minusRight a{
+	text-decoration: none;
+	color:#fff;
+}
+.sum a i{
+	color:#fff;
+	font-size: 1.4rem;
+}
+.buy_number{
+	float: left;
+	width:60px;
+	height:30px;
+	border-radius: 20px;
+	color:#333;
+	background: #ccc;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	margin-right: 1rem;
+	font-family: "微软雅黑";
+}
+.number{
+	font-size: 1.4rem;
+	color:#9b9b9b;
+	margin-right: 1.5rem;
+	float: left;
+	padding-top: 0.5rem;
+}
+.item_price{
+	padding:1.5rem 0 0 0;
+}
+.money{
+	font-size: 1.4rem;
+	color:#9b9b9b;
+	margin-right: 1.5rem;
+	padding-top: 0.5rem;
+}
+.item_price del{
+	font-size: 1.5rem;
+	font-family: "微软雅黑";
+	color:#ccc;
+}
+.delete{
+	margin-top:3rem;
+}
+.delete_btn{
+	text-decoration: none;
+	font-size: 1.4rem;
+	color:#9b9b9b;
+	margin-right: 1.5rem;
+	padding-top: 0.5rem;
+}
+.total{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:4.5rem;
+	line-height: 4.5rem;
+	padding:0 0.75rem;
+	background: #e17c72;
+}
+.total_price{
+	float: left;
+}
+.circle{
+	font-size: 1.6rem;
+	color:#fff;
+}
+.all_select{
+	font-size: 1.5rem;
+	color:#fff;
+	text-decoration: none;
+	margin-right: 0.5rem;
+}
+.summation{
+	color:#fff;
+	font-size: 1.5rem;
+}
+.symbol{
+	font-size: 1.5rem;
+}
+.all_price{
+	font-size: 1.5rem;
+}
+.settlement{
+	float: right;
+	margin-right: 2rem;
+	padding-left: 2rem;
+	border-left: 1px solid #f8f8f8;
+}
+.settlement span{
+	color:#fff;
+	font-size: 1.5rem;
+}
+.color{
+	color:#fff;
+	background: #e17c72;
+}
+.navFix{ 
+	position:fixed; 
+	left:0; 
+	top:0; 
+	width:100%;
+	background-color: #fff;
+	_position:absolute; 
+	top:expression((offsetParent.scrollTop)+0); 
+	z-index:101;
+}
+
+.carnull{
+	width: 90%;
+	margin-left: 5%;
+}
+.car_img{
+	background:url(__PUBLIC__/Wap/shopcarli/images/car.png);
+	background-size: 35%;
+	background-repeat: no-repeat;
+	background-position: 45% center;
+	width: 100%;
+	height: 15rem;
+	margin: 0 auto;
+	/*margin-top: 5rem;*/
+}
+.carnull_img p{
+	color: #ccc;
+	text-align: center;
+	line-height: 2rem;
+}
+.nullcar{
+	font-size: 1.5rem;
+}
+.carnull_img a{
+	text-decoration: none;
+	text-align: center;
+	color: #68cb78;
+	font-size: 1.5rem;
+}
+.goto{
+	margin-top: 3rem;
+}

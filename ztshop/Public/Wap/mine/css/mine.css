@@ -1,0 +1,92 @@
+body,p,li,ul{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	font-size: 62.5%;
+	font-family: 微软雅黑
+}
+.wrap{
+	width: 100%;
+}
+.header{
+	height: 4.2rem;
+	padding:0 1.1rem;
+	background-color: #68cb78;
+}
+.header img{
+	display: inline-block;
+	margin-top:1rem;
+
+}
+i{
+	margin-top:1rem; 
+	float: right;
+	color: #fff;
+}
+.nav{
+
+	height: 3.5rem;
+	text-align: center;
+	border-bottom: 0.2rem solid #68cb78;
+}
+.nav ul li{
+	width: 25%;
+	line-height: 3.5rem;
+	font-size: 1,6rem;
+	list-style: none;
+	float: left;
+}
+a{
+	text-decoration: none;
+	color: #4a4a4a;
+}
+.n-login{
+	margin: 2.3rem 0 2.3rem 0;
+	text-align: center;
+	
+}
+.n-login p{
+	font-size: 1.8rem;
+	color: #9b9b9b;
+}
+.ask-login-wrap{
+	padding:2rem 1.25rem 2rem 1.25rem;
+	border-top: 0.1rem solid #ccc;
+	border-bottom:  0.1rem solid #ccc;
+}
+.aask-login{
+	width: 28.75rem;
+
+}
+.ask-login p:nth-of-type(1){
+	text-align: center;
+	color: #4a4a4a;
+	margin-bottom: 1.75rem;
+}
+.login{
+	width: 94%;
+	height: 2.8rem;
+	line-height: 2.8rem;
+	margin: 0 0.625rem;
+	text-align: center;
+	background-color:  #68cb78;
+	border-radius: 0.3rem;
+	color: #fff;
+} 
+.login-bottom{
+	margin-top: 1.7rem; 
+	text-align: center;
+
+}
+.login-bottom p{
+	display: inline-block;
+	
+	font-size: 1.55rem;
+	text-align: center;
+	color: #9b9b9b;	
+}
+.login-bottom a{
+	display: inline-block;
+	color: #68cb78;
+}

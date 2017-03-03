@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="__PUBLIC__/Wap/goodsdetail/css/font-awesome.min.css">	
+	<link rel="stylesheet" href="__PUBLIC__/Wap/goodsdetail/css/swiper.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/Wap/goodsdetail/css/detail.css">
+	<script src="__PUBLIC__/Wap/goodsdetail/js/swiper.min.js"></script>
+	<script src="__PUBLIC__/Wap/goodsdetail/js/jquery.js"></script>
+	<script	src="__PUBLIC__/Wap/plugin/jquery.tmpl.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<div id="detail" rel="{$goods_id}">
+		<script id="infor" type="text/x-jquery-tmpl">
+			<div class="head">
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img class="img-responsive" src="__PUBLIC__/Wap/goodsdetail/images/img.jpg" alt=""></div>
+				        <div class="swiper-slide"><img class="img-responsive" src="__PUBLIC__/Wap/goodsdetail/images/img2.jpg" alt=""></div>
+				        <div class="swiper-slide"><img class="img-responsive" src="__PUBLIC__/Wap/goodsdetail/images/img3.jpg" alt=""></div>
+				    </div>
+				    <div class="swiper-pagination"></div>
+				</div>
+				<div class="head_detail">
+					<p class="cotton">{{= name}}</p>
+					<p class="price"><span>￥{{= market_price}}</span><del>￥{{= price}}</del></p>
+					<div class="freight clearfix">
+						<div class="carriage">
+							<span>运费:</span>
+							<span>￥8.00</span>
+							<a href="">非包邮地区</a>
+						</div>
+						<div class="letter">
+							<i class="fa fa-heart-o"></i>
+							<i class="fa fa-envelope-o"></i>
+						</div>
+					</div>
+				</div>
+				<div class="sales_promotion">
+					<span class="sale">促销</span>
+					<span class="package">满299包邮</span>
+				</div>
+				<div class="select">
+					<div class="color_select">
+						<span class="head_select">颜色</span>
+						<span class="color_box background"><a href="">黑</a></span>
+					</div>
+					<div class="size_select clearfix">
+						<div class="head_select">尺寸</div>
+						<div>
+							<span class="color_box"><a href="###" class="background">m</a></span>
+							<span class="color_box"><a href="###">l</a></span>
+							<span class="color_box"><a href="###">xl</a></span>
+							<span class="color_box"><a href="###">xxl</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="sum clearfix">
+					<span class="number">数量</span>
+					<div class="minusLeft"><a href="###"><i class="fa fa-minus"></i></a></div>
+					<div class="buy_number">1</div>
+					<div class="minusRight background"><a href="###"><i class="fa fa-plus"></i></a></div>
+				</div> 
+				<div class="assure">
+					<ul class="assure_list clearfix">
+						<li>豆瓣市集担保</li>
+						<li>|</li>
+						<li>七天无理由退货</li>
+						<li>|</li>
+						<li>正品保证</li>
+						<li>|</li>
+						<li>独立品牌</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="bottom_list">
+					<ul class="clearfix">
+						<li><a href="###" class="color">商品详情</a></li>
+						<li><a href="###">评价</a></li>
+						<li><a href="###">讨论</a></li>
+					</ul>
+				</div>
+				<div>
+					<div class="bottom_items item_box">
+						<div class="item_img">
+							<img src="__PUBLIC__/Wap/goodsdetail/images/pic.jpg">
+							<img src="__PUBLIC__/Wap/goodsdetail/images/pic.jpg">
+							<img src="__PUBLIC__/Wap/goodsdetail/images/pic.jpg">
+							<img src="__PUBLIC__/Wap/goodsdetail/images/pic.jpg">
+						</div>
+						<div class="explain">
+							<div class="shop_explain clearfix">
+								<span class="help">购物说明</span>
+								<span class="help">|</span>
+								<span class="help">帮助</span>
+								<span class="contact">联系豆瓣</span>
+							</div>
+							<div class="stroll">逛逛豆瓣市集</div>
+						</div>
+					</div>
+					<div class="item_box hide">
+						<ul class="evaluation_list">
+							<li>
+								<div class="evaluation">
+									<div class="appraise">
+										<p class="appraise_detail"><span class="name">轩辕</span><span class="date">2016-08-15</span><span class="time">15:02:52</span></p>
+										<p class="appraise_detail">
+											<span class="praise">也对同店铺商品评价道</span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</p>
+										<p class="customer">很好 材料很好 大小合适 文艺范</p>
+										<div class="head_img">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1469.jpg">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1470.jpg">
+										</div>
+									</div>
+									<div class="img_box"></div>
+								</div>
+							</li>
+							<li>
+								<div class="evaluation">
+									<div class="appraise">
+										<p class="appraise_detail"><span class="name">轩辕</span><span class="date">2016-08-15</span><span class="time">15:02:52</span></p>
+										<p class="appraise_detail">
+											<span class="praise">也对同店铺商品评价道</span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</p>
+										<p class="customer">很好 材料很好 大小合适 文艺范</p>
+										<div class="head_img">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1469.jpg">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1470.jpg">
+										</div>
+									</div>
+									<div class="img_box"></div>
+								</div>
+							</li>
+							<li>
+								<div class="evaluation">
+									<div class="appraise">
+										<p class="appraise_detail"><span class="name">轩辕</span><span class="date">2016-08-15</span><span class="time">15:02:52</span></p>
+										<p class="appraise_detail">
+											<span class="praise">也对同店铺商品评价道</span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</p>
+										<p class="customer">很好 材料很好 大小合适 文艺范</p>
+										<div class="head_img">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1469.jpg">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1470.jpg">
+										</div>
+									</div>
+									<div class="img_box"></div>
+								</div>
+							</li>
+							<li>
+								<div class="evaluation">
+									<div class="appraise">
+										<p class="appraise_detail"><span class="name">轩辕</span><span class="date">2016-08-15</span><span class="time">15:02:52</span></p>
+										<p class="appraise_detail">
+											<span class="praise">也对同店铺商品评价道</span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</p>
+										<p class="customer">很好 材料很好 大小合适 文艺范</p>
+										<div class="head_img">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1469.jpg">
+											<img src="__PUBLIC__/Wap/goodsdetail/images/1470.jpg">
+										</div>
+									</div>
+									<div class="img_box"></div>
+								</div>
+							</li>
+						</ul>
+						<div class="explain">
+							<div class="shop_explain clearfix">
+								<span class="help">购物说明</span>
+								<span class="help">|</span>
+								<span class="help">帮助</span>
+								<span class="contact">联系豆瓣</span>
+							</div>
+							<div class="stroll">逛逛豆瓣市集</div>
+						</div>
+					</div>
+					<div class="discuss item_box hide">
+						<div class="nobody">还没有人参加讨论</div>
+						<div class="explain">
+							<div class="shop_explain clearfix">
+								<span class="help">购物说明</span>
+								<span class="help">|</span>
+								<span class="help">帮助</span>
+								<span class="contact">联系豆瓣</span>
+							</div>
+							<div class="stroll">逛逛豆瓣市集</div>
+						</div>
+						<a href="" class="button">参与讨论</a>
+					</div>
+				</div>
+			</div>	
+			<div class="shop_cate">
+				<i class="fa fa-shopping-cart"></i>
+				<a href="#" class="addbtn">加入购物车</a>
+				<a href="#" class="shopbtn">立即购买</a>
+			</div>
+		</script>
+	</div>
+<script src="__PUBLIC__/Wap/goodsdetail/js/detail.js"></script>
+</body>
+</html>

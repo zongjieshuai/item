@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>修改</title>
+</head>
+<body>
+    <h2>修改</h2>
+	<form action="{:U('admin/goods/handleedit',array('id'=>$goods_info['id']))}" method="POST" enctype="multipart/form-data">
+	
+		商品号： <input type="text" name="sn" value="<?php echo $goods_info['sn']; ?>"><br>
+		商品名： <input type="text" name="name" value="<?php echo $goods_info['name']; ?>"><br>
+		价格： <input type="text" name="price" value="<?php echo $goods_info['price']; ?>"><br>
+		市场价： <input type="text" name="market_price" value="<?php echo $goods_info['market_price']; ?>"><br>
+		库存： <input type="text" name="stock" value="<?php echo $goods_info['stock']; ?>"><br>
+		描述：<textarea name="desc" value=""><?php echo $goods_info['desc']; ?></textarea>		
+		分类：<select name="category">
+          <?php foreach ($category as $value) { ?>
+          	<option 
+          	<?php 
+          	if($goods_info['category']==$value['id']) { 
+          		echo 'selected';
+          	} 
+          	?> 
+          	value="{$value['id']}">{$value['name']}</option>
+			<?php  } ?>
+			</select><br>
+		
+		主图：<input type="file" name="img" value ="<?php echo $goods_info['img']; ?>"><br>	
+		<img src="/Public/Uploads/{$goods_info['img']}" alt="">
+
+            
+            <input type="submit">
+
+	</form>
+</body>
+</html>

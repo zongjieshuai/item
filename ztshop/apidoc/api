@@ -1,0 +1,190 @@
+wap
+
+
+api
+	首页
+	ztshop.my/index.php/api/Index/main
+	param
+		null
+	result
+	{
+		status : 'ok'，
+		data   : {
+			ad : [{img:'/upllad/a.jpg',url:'http://www.baidu.com'},...],
+			recomment_goods:
+			[
+				{
+					goods_img:"",
+					goods_price:"",
+					goods_market_price:"",
+					goods_name:"",
+					goods_id:"",
+					goods_url:"",
+				},
+			],
+			floor: [
+				{
+					name:'',
+					desc:'',
+					logo:'',
+					goods: 
+					[
+						{
+						goods_img:"",
+						goods_price:"",
+						goods_market_price:"",
+						goods_name:"",
+						goods_id:"",
+						goods_url:"",
+						},
+					],
+					category_id:'1',
+				}
+			]
+		} 	
+	}
+
+
+
+	http://ztshop.my/index.php/api/category/index
+	param
+		null
+	result
+	{
+		status : 'ok'，
+		data   : {
+			category : 
+			[
+				{
+					id  : 1,
+					name : "饮品",
+					child : 
+					[
+						id  : 1,
+						name : "饮品",
+					]
+
+				},
+			]
+		} 	
+	}
+
+	//分类商品
+	http://ztshop.my/index.php/api/category/goods
+	param
+		{
+			page : 1,
+			limit : 20,
+			category_id : 2,
+			category_child_id : 2,
+			order : 1,
+
+		}
+	result
+	{
+		status : 'ok'，
+		data   : {
+			goods : 
+			[
+				{
+					goods_img:"",
+					goods_price:"",
+					goods_market_price:"",
+					goods_name:"",
+					goods_id:"",
+					goods_url:"",
+				},
+			],
+			current_page:1
+		} 	
+	}
+
+	//商品详情
+	http://ztshop.my/index.php/api/goods/info
+	param
+		{
+			id : 1,
+		}
+	result
+	{
+		status : 'ok'，
+		data   : {
+			goods_id: '',
+			goods_name: '',
+			goods_price: '',
+			goods_market_price: '',
+			goods_image: 
+			[
+				{'img':''},
+			],
+		} 	
+	}
+
+	//加入购物车
+	http://ztshop.my/index.php/api/cart/addcart
+	param
+		{
+			goods_id : 1,
+			goods_num:1,
+		}
+	result
+	{
+		status : 'ok'，
+		data   : {
+			count : 3,
+		}
+	}
+
+	//登录
+	http://ztshop.my/index.php/api/user/handlelogin
+	param post
+		{
+			emial : "",
+			password : "",
+		}
+	result
+	{
+		status : 'ok'，
+		data   : "success",
+
+	}
+
+	//注册
+	http://ztshop.my/index.php/api/user/handleregister
+	param post
+		{
+			emial : "",
+			password : "",
+			nick: "",
+		}
+	result
+	{
+		status : 'ok'，
+		data   : "success",
+	}
+	$result =array('status'=>'ok','data'=>'登录成功')
+	 echo json_encode($result);
+
+	//购物车列表
+	http://ztshop.my/index.php/api/cart/lists
+	param post
+		{
+			
+		}
+	result
+	{
+		status : 'ok'，
+		data   : {
+			cartgoods : [
+				{
+					goods_img:"",
+					goods_price:"",
+					goods_name:"",
+					goods_id:"",
+					goods_url:"",
+					goods_num:'',
+					cart_id:'',
+				},
+			]
+		}
+	}

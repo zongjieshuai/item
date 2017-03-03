@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="__PUBLIC__/Wap/orderconfirm/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Wap/orderconfirm/css/db_buy.css">
+	<script type="text/javascript" src="__PUBLIC__/Wap/orderconfirm/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Wap/orderconfirm/js/jquery.tmpl.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/Wap/orderconfirm/js/db_buy.js"></script>
+</head>
+<body>
+<!-- 增加地址详细信息 -->
+<div class="newly">
+	<p>增加收货地址</p><hr>
+	<div class="new_name">
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="收货人姓名" class="name">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="请输入详细地址" class="add">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="手机号" class="phone">
+		</div>
+	</div>
+	<div class="save"><a href="">保存</a></div>
+	<div class="no">取消</div>
+</div>
+<!-- 修改 -->
+<div class="newly1">
+	<p>修改收货地址</p><hr>
+	<div class="new_name">
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="收货人姓名" class="name1">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="请输入详细地址" class="add1">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="手机号" class="phone1">
+		</div>
+	</div>
+	<div class="save1"><a href="">保存</a></div>
+	<div class="no">取消</div>
+</div>
+<!-- 匿名下单 -->
+<div class="app">
+	<div class="buy_message hide clearfix">
+		<div class="receiving clearfix">
+			<div class="receiving_mes clearfix">
+				<h5 class="message_top"><span>收货人信息</span></h5><div class="anonymity"><span>*当前为匿名下单</span><a href=""><span>点此登录</span></a></div>
+			</div>
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="收货人姓名" class="name">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="请输入详细地址" class="add">
+		</div>
+		<div class="input_message">
+			<span>*</span>
+			<input type="text" placeholder="手机号" class="phone">
+		</div>
+		<div class="verify clearfix">
+			<span>*</span>
+			<input type="text" class="verify_num">
+			<button class="send" id="btn">发送验证码</button>
+		</div>
+	</div>
+<!-- 添加后的地址 -->
+	<div class="addresse">
+		<div class="receiving clearfix">
+			<div class="receiving_mes clearfix">
+				<h5 class="message_top"><span>收货人信息</span></h5>
+			</div>
+			<!-- <div class="new_addresse">
+				<p class="ad_my">这是我的地址</p>
+				<p class="my_sp"><span>1辽宁省</span><span class="my_name">1赵守业</span><span class="new_phone">113166966087</span></p>
+				<p><span class="cancel">删除</span><span class="amend">修改</span></p>
+			</div>
+			<div class="new_addresse">
+				<p class="ad_my">的地址</p>
+				<p class="my_sp"><span>2辽宁省</span><span class="my_name">2赵守业</span><span class="new_phone">213166966087</span></p>
+				<p><span class="cancel">删除</span><span class="amend">修改</span></p>
+			</div>
+			<div class="new_addresse">
+				<p class="ad_my">这是我</p>
+				<p class="my_sp"><span>3辽宁省</span><span class="my_name">3赵守业</span><span class="new_phone">313166966087</span></p>
+				<p><span class="cancel">删除</span><span class="amend">修改</span></p>
+			</div> -->
+		</div>
+		<p class="ad_new">新增地址</p>
+	</div>
+<!-- 新增地址 -->
+	<div class="new">
+		<div class="receiving clearfix">
+			<div class="receiving_mes clearfix">
+				<h5 class="message_top"><span>收货人信息</span></h5>
+			</div>
+			<div class="new_add"><span>新增地址</span></div>
+		</div>
+	</div>
+<!-- 货品清单 -->
+	<div class="buy_list">
+		<h5>商品清单</h5>
+		<div class="commodity clearfix">
+			<div class="list_top">
+				<p class="com">
+					<img src="__PUBLIC__/Wap/orderconfirm/images/peach.jpg">
+					<div class="peach_message"><a href="">【豆瓣专享】童年的味道 黄桃罐头12罐*425g</a></div>
+				</p>
+				<p class="size"><span>尺寸：8罐装</span><span>/</span>单价：￥<span class="money">108</span>数量：<span class="many">1</span>
+				</p>
+				<p class="buy_money">金额：<span class="buy_money_m">108元</span></p><hr>
+				<p class="buy_num"><span>数量：</span><span class="minus_n">-</span><input type="text" class="buy_number" value="1"><span class="minus_y bg">+</span></p><hr>
+			</div>
+			<div class="clearfix">
+				<div class="freight clearfix">
+					<p class="clearfix"><span>￥0.00元</span><span>运费：</span></p>
+					<p class="clearfix"><span>￥0.00元</span><span>优惠：</span></p>
+					<p class="clearfix"><span class="total">￥108.00元</span><span>总计：</span></p>
+				</div>
+			</div>
+			<p><textarea placeholder="点击输入留言给卖家" class="talk"></textarea></p>
+			<p class="warn">提醒</p>
+			<p class="pay">支付成功后两天内发货，7天无条件退货</p>
+		</div>
+	</div>
+	<div class="payment">
+		<p>选择支付方式</p>
+		<div class="wechat_pay wechat"><i class="fa fa-check-circle"></i>使用微信支付</div>
+		<div class="alipay_pay"><i class="fa fa-check-circle"></i>使用支付宝支付</div>
+	</div>
+</div>
+<div class="submit clearfix">
+	<div class="submit_l">
+		<p>共<span>1</span>件商品</p>
+		<p>应付<span class="last_money">108</span>（包含运费￥0.00元）</p>
+	</div>
+	<div class="submit_r">提交订单</div>
+</div>
+</body>
+<script id="aaa" type="text/x-jquery-tmpl">
+	<div class="new_addresse">
+		<p class="ad_my">{{= address}}</p>
+		<p class="my_sp"><span></span><span class="my_name">${user_name}</span><span class="new_phone">{{= user_phone}}</span></p>
+		<p><span class="cancel"><a href="">删除</a></span><span class="amend">修改</span></p>
+		<p class="idd hide">{{= id}}</p>
+	</div>
+</script>
+</html>
